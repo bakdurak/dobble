@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/friends_graph"
+        app:startDestination="@id/friendsFriendsFragment">
+
+    <fragment
+            android:id="@+id/friendsFriendsFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.friends.FriendsFriendsFragment"
+            android:label="FriendsFriendsFragment" />
+    <fragment
+            android:id="@+id/friendsRequestsFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.friends.FriendsRequestsFragment"
+            android:label="FriendsRequestsFragment" />
+    <fragment
+            android:id="@+id/friendsOwnRequestsFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.friends.FriendsOwnRequestsFragment"
+            android:label="FriendsOwnRequestsFragment" />
+
+</navigation>

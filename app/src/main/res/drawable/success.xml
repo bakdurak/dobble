@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+            android:drawable="@drawable/success_icon"
+            android:width="16dp"
+            android:height="16dp"
+            android:left="12dp"
+            android:right="12dp"
+            />
+
+</layer-list >

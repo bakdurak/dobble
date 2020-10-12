@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="380dp"
+        android:minHeight="120dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+            android:id="@+id/sendMsgDialogAvatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/sendMsgDialogInput"/>
+
+
+    <TextView
+            android:id="@+id/sendMsgDialogName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/sendMsgDialogAvatar"
+            app:layout_constraintLeft_toLeftOf="@+id/sendMsgDialogInput"/>
+
+    <EditText
+            android:id="@+id/sendMsgDialogInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            app:layout_constraintTop_toBottomOf="@id/sendMsgDialogName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="12dp"
+            android:scrollbars="vertical" />
+
+    <Button
+            android:id="@+id/sendMsgDialogCancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:width="130dp"
+            android:background="@drawable/btn_send_msg"
+            app:layout_constraintTop_toBottomOf="@id/sendMsgDialogInput"
+            app:layout_constraintStart_toStartOf="@id/sendMsgDialogInput"
+            android:text="@string/users_send_msg_dialog_cancel_btn"
+            />
+
+    <com.example.dobble.release.extensions.ui.LoadingButton
+            android:drawableStart="@drawable/msg"
+            android:drawablePadding="10dp"
+            android:width="130dp"
+            android:textAlignment="textStart"
+            android:id="@+id/sendMsgDialogSendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_send_msg"
+            app:layout_constraintTop_toBottomOf="@id/sendMsgDialogInput"
+            app:layout_constraintEnd_toEndOf="@id/sendMsgDialogInput"
+            android:text="@string/users_send_msg_dialog_send_btn"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

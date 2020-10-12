@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">dobble</string>
+
+    <string name="register_email_title">Email</string>
+    <string name="register_email_placeholder">Email</string>
+    <string name="register_password_title">Password</string>
+    <string name="register_password_placeholder">Password</string>
+    <string name="register_first_name_title">First name</string>
+    <string name="register_first_name_placeholder">First name</string>
+    <string name="register_last_name_title">Last name</string>
+    <string name="register_last_name_placeholder">Last name</string>
+    <string name="register_city_title">City</string>
+    <string name="register_city_placeholder">City</string>
+    <string name="register_state_title">State</string>
+    <string name="register_state_placeholder">State</string>
+    <string name="register_radio_male">Male</string>
+    <string name="register_radio_female">Female</string>
+    <string name="register_dob_title">Date of birth</string>
+    <string name="register_dob_button_title">Pick date of birth</string>
+    <string name="register_submit">Submit</string>
+    <string name="register_navbar_register">Sign up</string>
+    <string name="register_navbar_login">Sign in</string>
+    <string name="register_error_invalid_email">Wrong email</string>
+    <string name="register_error_email_exists">Email exists</string>
+    <string name="register_error_invalid_password">Password must have at least 4 characters</string>
+    <string name="register_error_invalid_first_name">First name must have at least 2 characters</string>
+    <string name="register_error_invalid_last_name">Last name must have at least 2 characters</string>
+    <string name="register_error_invalid_city">City must have at least 2 characters</string>
+    <string name="register_error_invalid_state">State must have at least 2 characters</string>
+
+
+    <string name="btn_logout_title">Log out</string>
+
+    <string name="navbar_wall">wall</string>
+    <string name="navbar_users">users</string>
+    <string name="navbar_friends">friends</string>
+    <string name="navbar_photos">photos</string>
+    <string name="navbar_messages">messages</string>
+    <string name="navbar_profile">profile</string>
+
+    <string name="profile_upload_btn">Upload photo</string>
+    <string name="profile_submit_avatar_btn">Submit</string>
+    <string name="profile_edit_profile">Edit profile</string>
+    <string name="profile_edit_password">Password</string>
+    <string name="profile_edit_first_name">First name</string>
+    <string name="profile_edit_last_name">Last name</string>
+    <string name="profile_edit_city">City</string>
+    <string name="profile_edit_password_placeholder">Enter new password</string>
+    <string name="profile_edit_first_name_placeholder">Enter new first name</string>
+    <string name="profile_edit_last_name_placeholder">Enter new last name</string>
+    <string name="profile_edit_city_placeholder">Enter new city</string>
+    <string name="profile_edit_change_btn">Change</string>
+    <string name="profile_text_before_email">Email: %1$s</string>
+    <string name="profile_text_before_first_name">First name: %1$s</string>
+    <string name="profile_text_before_last_name">Last name: %1$s</string>
+    <string name="profile_text_before_city">City: %1$s</string>
+    <string name="profile_text_before_state">State: %1$s</string>
+    <string name="profile_text_before_gender">Gender: %1$s</string>
+    <string name="profile_text_before_dob">Date of birth: %1$s</string>
+    <string name="profile_upload_avatar_error">Some problems during avatar uploading</string>
+    <string name="profile_edit_result_error">Some error has occurred while making changes</string>
+    <string name="profile_edit_result_success">Changed!</string>
+
+    <string name="login_email_input_placeholder">Email</string>
+    <string name="login_password_input_placeholder">Password</string>
+    <string name="login_submit_btn">Log in</string>
+    <string name="login_empty_email">Fill email field</string>
+    <string name="login_empty_password">Fill password field</string>
+    <string name="login_wrong_credentials">Wrong credentials</string>
+    <string name="login_rx_error">Some error has occurred</string>
+
+    <string name="users_add_friend_btn">Add friend</string>
+    <string name="users_send_msg_btn">Send message</string>
+    <string name="users_view_profile_btn">View profile</string>
+    <string name="users_input_placeholder">Find users</string>
+    <string name="users_add_Friend_err">You already have the profileResponse in friend list</string>
+    <string name="users_add_Friend_success">Added!</string>
+    <string name="users_send_msg_dialog_send_btn">Send</string>
+    <string name="users_send_msg_dialog_cancel_btn">Cancel</string>
+    
+    <string name="wall_add_comment_header">Wall</string>
+    <string name="wall_send_comment_btn">Submit</string>
+    <string name="wall_add_comment_placeholder">Write on the wall</string>
+    <string name="wall_add_sub_comment_placeholder">Enter comment</string>
+    <string name="wall_add_sub_comment_btn">Send</string>
+    
+    <string name="friends_navbar_friends">Friends</string>
+    <string name="friends_navbar_requests">Requests</string>
+    <string name="friends_navbar_own_requets">Own requests</string>
+
+    <string name="friends_friends_remove_friend_success">Friend removed</string>
+    <string name="friends_friends_remove_friend_error">Friend removal failed</string>
+
+    <string name="friends_friends_approve_friend_success">Friend Added</string>
+    <string name="friends_friends_approve_friend_error">Friend approving failed</string>
+
+    <string name="friends_friends_revoke_friend_success">Friend request successfully revoked</string>
+    <string name="friends_friends_revoke_friend_error">Friend revoking failed</string>
+</resources>

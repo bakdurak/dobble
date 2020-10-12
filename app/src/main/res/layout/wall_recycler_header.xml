@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/wallSubmitCommentContainer"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/wall_content_container"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:id="@+id/wallCommentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/wall_add_comment_header"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:text="@string/wall_add_comment_header"
+            android:textColor="@color/color_white"
+            android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+            android:id="@+id/wallCommentInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="2"
+            app:layout_constraintTop_toBottomOf="@id/wallCommentHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="@string/wall_add_comment_placeholder"
+            android:textSize="12dp"
+            android:layout_margin="12dp"
+            android:scrollbars="vertical" />
+
+    <Button
+            android:id="@+id/wallCommentSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/wall_send_comment_btn"
+            android:text="@string/wall_send_comment_btn"
+            android:textAllCaps="false"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="18dp"
+            android:stateListAnimator="@null"
+            />
+
+</LinearLayout>

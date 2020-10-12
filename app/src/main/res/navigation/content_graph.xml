@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/content_graph"
+        app:startDestination="@id/wallFragment">
+
+    <fragment
+            android:id="@+id/wallFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.WallFragment"
+            android:label="WallFragment" />
+    <fragment
+            android:id="@+id/usersFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.UsersFragment"
+            android:label="UsersFragment" />
+    <fragment
+            android:id="@+id/profileFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.ProfileFragment"
+            android:label="ProfileFragment" />
+    <fragment
+            android:id="@+id/photosFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.PhotosFragment"
+            android:label="PhotosFragment" />
+    <fragment
+            android:id="@+id/messagesFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.MessagesFragment"
+            android:label="MessagesFragment" />
+    <fragment
+            android:id="@+id/friendsFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.friends.FriendsFragment"
+            android:label="FriendsFragment" />
+</navigation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".release.ui.fragments.EntranceFragment">
+
+    <fragment
+            android:name="com.example.dobble.release.ui.fragments.HeaderFragment"
+            android:id="@+id/header_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_fragment_height"
+             />
+
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/registerTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_navbar_login" />
+
+        <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_navbar_register" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <fragment
+            android:id="@+id/entranceFragmentContainer"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/entrance_graph" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+            android:id="@+id/friends_navbar_fragment"
+            android:name="com.example.dobble.release.ui.fragments.content.friends.FriendsNavbarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    <fragment
+            android:id="@+id/nav_friends_fragment_container"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/friends_graph"
+            />
+
+</LinearLayout>

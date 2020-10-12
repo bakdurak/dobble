@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+    <fragment
+            android:id="@+id/header_fragment"
+            android:name="com.example.dobble.release.ui.fragments.HeaderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_fragment_height"
+            />
+
+    <fragment
+            android:id="@+id/navbar_fragment"
+            android:name="com.example.dobble.release.ui.fragments.NavbarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    <fragment
+            android:id="@+id/nav_content_fragment_container"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/content_graph"
+            />
+
+</LinearLayout>

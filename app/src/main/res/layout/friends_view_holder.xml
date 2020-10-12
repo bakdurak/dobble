@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+            android:id="@+id/friendItemAvatar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/friendItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/friendItemAvatar" />
+
+    <Button
+            android:id="@+id/friendActionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_add_friend"
+            android:textColor="@color/color_white"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/users_add_friend_btn"
+            android:height="35dp"
+            android:minHeight="0dp"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/friendItemAvatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+            android:id="@+id/friendSendMsgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_send_msg"
+            android:textColor="@color/send_msg_btn_text"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/users_send_msg_btn"
+            android:height="35dp"
+            android:minHeight="0dp"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@id/friendActionBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+            android:id="@+id/friendViewProfileBtn"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_view_profile"
+            android:textColor="@color/color_white"
+            android:layout_height="wrap_content"
+            android:text="@string/users_view_profile_btn"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:padding="5dp"
+            android:height="35dp"
+            android:textSize="12sp"
+            android:minHeight="0dp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@id/friendSendMsgBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+            app:layout_constraintTop_toBottomOf="@id/friendItemResult"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/users_separator"/>
+
+    <TextView
+            android:id="@+id/friendItemResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/friendItemName"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

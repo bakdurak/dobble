@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_graph"
+        app:startDestination="@id/initialFragment">
+    <fragment
+            android:id="@+id/entranceFragment"
+            android:name="com.example.dobble.release.ui.fragments.EntranceFragment"
+            android:label="RegisterFragment" />
+    <fragment
+            android:id="@+id/initialFragment"
+            android:name="com.example.dobble.release.ui.fragments.InitialFragment"
+            android:label="InitialFragment" />
+    <fragment
+            android:id="@+id/contentFragment"
+            android:name="com.example.dobble.release.ui.fragments.content.ContentFragment"
+            android:label="ContentFragment" />
+</navigation>

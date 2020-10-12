@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/profileAvatar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="@id/profileEmail" />
+
+        <TextView
+                android:id="@+id/profileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileAvatar" />
+
+        <TextView
+                android:id="@+id/profileFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileEmail" />
+
+        <TextView
+                android:id="@+id/profileLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileFirstName" />
+
+        <TextView
+                android:id="@+id/profileCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileLastName" />
+
+        <TextView
+                android:id="@+id/profileState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileCity" />
+
+        <TextView
+                android:id="@+id/profileGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileState" />
+
+        <TextView
+                android:id="@+id/profileDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileGender" />
+
+        <Button
+                android:id="@+id/profileUploadBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/btn_register"
+                android:padding="15dp"
+                android:text="@string/profile_upload_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileDob" />
+
+        <Button
+                android:id="@+id/profileSubmitPhotoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/btn_register"
+                android:padding="15dp"
+                android:text="@string/profile_submit_avatar_btn"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                android:textColor="@color/color_white"
+                app:layout_constraintStart_toEndOf="@+id/profileUploadBtn"
+                app:layout_constraintTop_toBottomOf="@+id/profileDob" />
+
+        <TextView
+                android:id="@+id/profileUploadErrorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/profileUploadBtn"
+                app:layout_constraintStart_toStartOf="@id/profileUploadBtn"
+                android:textColor="@color/validatable_edit_text_border_false" />
+
+        <LinearLayout
+                android:id="@+id/profileEditWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileUploadBtn">
+
+            <TextView
+                    android:id="@+id/profileEditProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/profile_edit_profile"
+                    android:textSize="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+            <TextView
+                    android:id="@+id/profilePasswordLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/profile_edit_password"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileEditProfile" />
+
+            <com.example.dobble.release.extensions.ui.ValidatableEditText
+                    android:id="@+id/profilePasswordInput"
+                    android:layout_width="294dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/profile_edit_password_placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profilePasswordLabel" />
+
+            <TextView
+                    android:id="@+id/profileFirstNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/profile_edit_first_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profilePasswordInput" />
+
+            <com.example.dobble.release.extensions.ui.ValidatableEditText
+                    android:id="@+id/profileFirstNameInput"
+                    android:layout_width="294dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/profile_edit_first_name_placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileFirstNameLabel" />
+
+            <TextView
+                    android:id="@+id/profileLastNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/profile_edit_last_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileFirstNameInput" />
+
+            <com.example.dobble.release.extensions.ui.ValidatableEditText
+                    android:id="@+id/profileLastNameInput"
+                    android:layout_width="294dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/profile_edit_last_name_placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileLastNameLabel" />
+
+            <TextView
+                    android:id="@+id/profileCityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/profile_edit_city"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileLastNameInput" />
+
+            <com.example.dobble.release.extensions.ui.ValidatableEditText
+                    android:id="@+id/profileCityInput"
+                    android:layout_width="294dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/profile_edit_city_placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileCityLabel" />
+
+            <Button
+                    android:id="@+id/profileChangeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/btn_register"
+                    android:padding="15dp"
+                    android:text="@string/profile_edit_change_btn"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_white"
+                    android:backgroundTint="@color/profile_change_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileCityInput" />
+
+            <TextView
+                    android:id="@+id/profileEditResult"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileChangeBtn" />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

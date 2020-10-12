@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item   android:width="16dp"
+            android:height="16dp"
+            android:left="12dp"
+            android:right="12dp">
+        <rotate
+                android:drawable="@drawable/spinner_icon"
+                android:duration="1000"
+                android:fromDegrees="0"
+                android:pivotX="50%"
+                android:pivotY="50%"
+                android:repeatCount="infinite"
+                android:startOffset="0"
+                android:fillAfter="true"
+                android:toDegrees="360"/>
+    </item>
+</layer-list>
